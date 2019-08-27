@@ -1,0 +1,96 @@
+html,
+body {
+    height: 100%;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url('/static/fonts/BenSenHandwriting.ttf');
+}
+
+* {
+    font-family: myFirstFont;
+}
+
+#page-content {
+    flex: 1 0 auto;
+}
+
+#sticky-footer {
+    flex-shrink: none;
+}
+
+#page-content {
+    /* background: url('../images/classroom7.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646; */
+}
+
+#input-text {
+    resize: none;
+    background: url('/static/images/text-area.jpg');
+    width: 800px;
+    height: 500px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: unset !important;
+    background-size: cover;
+    background-color: #464646;
+    border: none;
+    padding: 5%;
+    color: #fff;
+    font-size: 25px;
+}
+
+.teacher {
+    resize: none;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: unset !important;
+    background-size: cover;
+    top: 50%;
+}
+
+.no-results {
+    text-align: center;
+    color: #fff;
+    height: 200px;
+}
+
+.vertical-align {
+    position: relative;
+    top: 100%;
+    transform: translateY(-50%);
+}
+
+@media only screen and (min-width: 40em) {
+    .no-results {
+        height: 500px;
+    }
+}
+
+.buttons input {
+    height: 100px;
+    width: 400px;
+}
+
+.buttons {
+    top: 60%;
+}
+
+.gap {
+    height: 50px;
+}
+
+.top-bar {
+    position: relative;
+}
+
+.top-bar img {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}

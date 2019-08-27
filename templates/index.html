@@ -1,38 +1,60 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Title</title>
-    <!-- Required meta tags -->
+
+<head>
+    <title>মাস্টারমশাই</title>
+    <link rel="shortcut icon" type="image/png" href="../static/images/favicon.png">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="../css/style.css" rel="stylesheet" type="text/css"/>
-  </head>
-  
-  <body class="d-flex flex-column">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/main.css') }}">
+</head>
+
+<body class="d-flex flex-column">
 
     <div id="page-content">
-      <div class="container text-center">
-        <div class="row justify-content-center">
-          <div class="col-md-7">
-            <h1 class="font-weight-light mt-4 text-white"></h1>
-            <p class="lead text-white-50"></p>
-          </div>
+        <div class="container-fluid text-center">
+            <div class="row top-bar">
+                <img src="{{ url_for('static',filename='images/logo.jpg') }}" class="ribbon" />
+                <!-- <input type="image" value="" src="../images/logo.jpg" name="logo"> -->
+            </div>
+
+            <div class="row no-results">
+                <div class="col-sm teacher">
+                    <img src="../static/images/teacher.jpg" alt="teacher">
+                </div>
+                <div class="col-sm vertical-align">
+                    <textarea name="input-text" id="input-text" placeholder="এখানে লিখুন" cols="30" rows="10"></textarea>
+                </div>
+
+                <div class="col-sm buttons">
+                    <div class="form-group">
+                        <input type="image" value="bohunirbachoni" id="bohunirbachoni" src="{{ url_for('static',filename='images/bohunirbachoni.jpg') }}" name="bohunirbachoni">
+                        <div class="gap"></div>
+                        <input type="image" value="shotto-mittha" id="shotto-mittha" src="{{ url_for('static',filename='images/shotto-mittha.jpg') }}" name="shotto-mittha">
+                        <div class="gap"></div>
+                        <input type="image" value="shunnosthan" id="shunnosthan" src="{{ url_for('static',filename='images/shunnosthan.jpg') }}" name="shunnosthan">
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
+
     <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
-      <div class="container text-center">
-        <small>Copyright &copy; MasterMoshai</small>
-      </div>
+        <div class="container text-center">
+            <small>Copyright &copy; MasterMoshai</small>
+        </div>
     </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+    <script src="{{ url_for('static',filename='js/main.js') }}"></script>
+
+</body>
+
 </html>

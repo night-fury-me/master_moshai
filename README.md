@@ -22,4 +22,3 @@ Read the rest of the article here (Coming soon!)
 This project utilizes Python, PyTorch, Flask, Numpy, Pandas, Matplotlib, HTML, CSS, JSON, Gunicorn, Pillow, and more.
 
 All of the files are here except for the PyTorch image classifier checkpoint. I want to encourage everyone who's interested to build this app off of their own deep learning models.
-# master_moshai
